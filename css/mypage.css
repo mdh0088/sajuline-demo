@@ -1,0 +1,461 @@
+/* MyPage Specific Styles */
+
+/* 프로필 섹션 */
+.profile-section {
+    padding: 32px 20px;
+    background: linear-gradient(180deg, rgba(147, 51, 234, 0.15) 0%, transparent 100%);
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.3) 0%, rgba(124, 58, 237, 0.2) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.3);
+}
+
+.profile-edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background: #9333EA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 3px solid #0a0a0f;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #B794F6;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* 포인트 섹션 */
+.point-section {
+    margin: 20px;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+}
+
+.point-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.point-title {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.point-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFD700;
+    margin-bottom: 16px;
+}
+
+.point-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.point-button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.charge-button {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0a0a0f;
+}
+
+.charge-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.3);
+}
+
+.history-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.history-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* 진행률 컨테이너 (티어 업그레이드 시스템) */
+.progress-container {
+    margin-top: 16px;
+    padding: 16px;
+    background: rgba(147, 51, 234, 0.05);
+    border: 1px solid rgba(147, 51, 234, 0.2);
+    border-radius: 16px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.progress-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #B794F6;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.progress-title .icon {
+    font-size: 16px;
+}
+
+.progress-amount {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(90deg, #9333EA 0%, #B794F6 100%);
+    border-radius: 12px;
+    transition: width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tier-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tier-icon {
+    font-size: 14px;
+}
+
+.current-tier {
+    color: #B794F6;
+    font-weight: 500;
+}
+
+.next-tier {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* 메뉴 섹션 */
+.menu-section {
+    padding: 20px;
+}
+
+.menu-group {
+    margin-bottom: 24px;
+}
+
+.menu-group-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    padding: 0 4px;
+}
+
+.menu-list {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.menu-item:active {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(147, 51, 234, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.menu-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-badge {
+    padding: 4px 10px;
+    background: rgba(255, 59, 48, 0.2);
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF6B6B;
+}
+
+.menu-arrow {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+/* 프리미엄 배너 */
+.premium-banner {
+    margin: 20px;
+    padding: 24px;
+    background: linear-gradient(135deg, #9333EA 0%, #7C3AED 100%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.premium-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.4);
+}
+
+.premium-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.premium-content {
+    position: relative;
+    z-index: 1;
+}
+
+.premium-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.premium-desc {
+    font-size: 14px;
+    margin-bottom: 16px;
+    opacity: 0.95;
+}
+
+.premium-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.premium-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 로그아웃 섹션 */
+.logout-section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 59, 48, 0.1);
+    border: 1px solid rgba(255, 59, 48, 0.3);
+    border-radius: 12px;
+    color: #FF6B6B;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background: rgba(255, 59, 48, 0.15);
+}
+
+.logout-button:active {
+    transform: scale(0.98);
+}
+
+/* 포인트 카드 (대체 포인트 표시) */
+.point-card {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+    border: 1px solid rgba(147, 51, 234, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.point-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(147, 51, 234, 0.2);
+}
+
+.point-card:active {
+    transform: scale(0.98);
+}

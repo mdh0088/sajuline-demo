@@ -1,0 +1,400 @@
+/* Detail Page Specific Styles */
+
+/* Main content adjustments for detail page */
+.main-content {
+    padding-bottom: 100px; /* Override common.css for bottom CTA space */
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 32px 20px;
+    background: radial-gradient(ellipse at center top, rgba(147, 51, 234, 0.2) 0%, transparent 70%);
+    position: relative;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.3) 0%, rgba(124, 58, 237, 0.2) 100%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.3);
+}
+
+.online-indicator {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background: #4CAF50;
+    border: 4px solid #0a0a0f;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(76, 175, 80, 0.6);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #B794F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile-title {
+    font-size: 16px;
+    color: #B794F6;
+    margin-bottom: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Expertise Section */
+.expertise-section {
+    padding: 24px 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.expertise-tag {
+    padding: 12px 20px;
+    background: rgba(147, 51, 234, 0.1);
+    border: 1px solid rgba(147, 51, 234, 0.3);
+    border-radius: 24px;
+    font-size: 14px;
+    color: #B794F6;
+    font-weight: 500;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 24px 20px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.intro-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-box {
+    margin-top: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+    border: 1px solid rgba(147, 51, 234, 0.2);
+    border-radius: 16px;
+}
+
+.highlight-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #B794F6;
+    margin-bottom: 8px;
+}
+
+.highlight-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 24px 20px;
+}
+
+.review-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.rating-large {
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFD700;
+}
+
+.rating-details {
+    flex: 1;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.star {
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.review-count {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.review-card {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewer-name {
+    font-weight: 600;
+}
+
+.review-date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.review-rating {
+    display: flex;
+    gap: 2px;
+}
+
+.review-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 24px 20px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.pricing-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+    border: 1px solid rgba(147, 51, 234, 0.2);
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.pricing-type {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pricing-value {
+    text-align: right;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.price-unit {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.discount-info {
+    font-size: 12px;
+    color: #FF6B6B;
+    margin-top: 4px;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 20px 24px;
+    background: linear-gradient(to top, #0a0a0f 0%, rgba(10, 10, 15, 0.95) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.cta-button {
+    flex: 1;
+    padding: 18px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, #9333EA 0%, #7C3AED 100%);
+    color: white;
+    box-shadow: 0 4px 20px rgba(147, 51, 234, 0.4);
+}
+
+.cta-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 24px 15px;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+    }
+
+    .profile-name {
+        font-size: 24px;
+    }
+
+    .profile-title {
+        font-size: 15px;
+    }
+
+    .profile-stats {
+        gap: 20px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    .expertise-section, .intro-section, .reviews-section, .pricing-section {
+        padding: 20px 15px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .expertise-tag {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .intro-content, .highlight-text, .review-content {
+        font-size: 13px;
+    }
+
+    .rating-large {
+        font-size: 40px;
+    }
+
+    .stars .star {
+        font-size: 18px;
+    }
+
+    .review-count {
+        font-size: 13px;
+    }
+
+    .pricing-card {
+        padding: 15px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .price-unit {
+        font-size: 12px;
+    }
+
+    .discount-info {
+        font-size: 11px;
+    }
+
+    .bottom-cta {
+        padding: 12px 15px 18px;
+    }
+
+    .cta-button {
+        padding: 16px;
+        font-size: 15px;
+    }
+}
